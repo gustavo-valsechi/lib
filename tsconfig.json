@@ -15,11 +15,5 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false
   },
-  "include": [
-    "index.ts",
-    "components/**/*",
-    "contexts/**/*",
-    "interfaces/**/*",
-    "tools/**/*"
-  ]
+  "include": ["**/*.ts", "**/*.tsx"]
 }
