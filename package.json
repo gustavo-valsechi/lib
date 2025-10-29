@@ -1,19 +1,23 @@
 {
-  "name": "@gustavo-valsechi/lib",
+  "name": "@gustavo-valsechi",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsup index.ts --dts"
+    "build": "tsup index.tsx --dts --format esm,cjs"
   },
   "dependencies": {
-    "@gustavo-valsechi/components": "^1.0.3",
-    "@gustavo-valsechi/contexts": "^1.0.0",
-    "@gustavo-valsechi/interfaces": "^1.0.2",
-    "@gustavo-valsechi/tools": "^1.0.0"
+    "@gustavo-valsechi/components": "file:components",
+    "@gustavo-valsechi/contexts": "file:contexts",
+    "@gustavo-valsechi/interfaces": "file:interfaces",
+    "@gustavo-valsechi/tools": "file:tools"
   },
   "devDependencies": {
-    "@types/node": "22.0.2",
+    "tsup": "^8.5.0",
     "typescript": "^5.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
