@@ -1,11 +1,11 @@
 {
   "name": "@gustavo-valsechi/lib",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "tsup index.tsx --dts --format esm,cjs"
+    "build": "tsup index.tsx components/index.ts contexts/index.ts tools/index.ts interfaces/index.ts --dts --format esm,cjs --out-dir dist"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "1.3.0",
@@ -41,5 +41,27 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    },
+    "./contexts": {
+      "import": "./dist/contexts/index.js",
+      "types": "./dist/contexts/index.d.ts"
+    },
+    "./tools": {
+      "import": "./dist/tools/index.js",
+      "types": "./dist/tools/index.d.ts"
+    },
+    "./interfaces": {
+      "import": "./dist/interfaces/index.js",
+      "types": "./dist/interfaces/index.d.ts"
+    }
   }
 }
