@@ -1,67 +1,71 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import { IPaginate as IPaginate$1, ITable as ITable$1, ILoadingBar as ILoadingBar$1, ILoadingApp as ILoadingApp$1, IModal as IModal$1, IBadge as IBadge$1, ILogo as ILogo$1, IInputFile as IInputFile$1, IInputLabel as IInputLabel$1, IInputText as IInputText$1, IInputSelect as IInputSelect$1, IButton as IButton$1, IInputDateTime as IInputDateTime$1, IInputTextarea as IInputTextarea$1, IForm as IForm$1, IChart as IChart$1, IAvatar as IAvatar$1, ILottie as ILottie$1, ICreditCard as ICreditCard$1, IBlock as IBlock$1, IComponent as IComponent$1, IIconProvider as IIconProvider$1, IThemeProvider as IThemeProvider$1, IThemeContext as IThemeContext$1, IModalProvider as IModalProvider$1, IModalContext as IModalContext$1, IComponentContent as IComponentContent$1 } from '@gustavo-valsechi/interfaces';
 import React from 'react';
-import * as Types from '@gustavo-valsechi/components/types';
-import * as moment from 'moment';
 import { UseFormRegister } from 'react-hook-form';
-import animations from '@gustavo-valsechi/components/types/lottie/animations';
-import { Modal as Modal$1 } from '@gustavo-valsechi/components';
+import * as moment from 'moment';
 
-declare function Paginate(props: IPaginate$1): false | react_jsx_runtime.JSX.Element;
+declare function Paginate(props: IPaginate): false | react_jsx_runtime.JSX.Element;
 
-declare function Table(props: ITable$1): react_jsx_runtime.JSX.Element;
+declare function Table(props: ITable): react_jsx_runtime.JSX.Element;
 
-declare function LoadingBar(props: ILoadingBar$1): react_jsx_runtime.JSX.Element;
+declare function LoadingBar(props: ILoadingBar): react_jsx_runtime.JSX.Element;
 
-declare function LoadingApp(props: ILoadingApp$1): react_jsx_runtime.JSX.Element;
+declare function LoadingApp(props: ILoadingApp): react_jsx_runtime.JSX.Element;
 
-declare function Modal(props: IModal$1): react_jsx_runtime.JSX.Element;
+declare function Modal(props: IModal): react_jsx_runtime.JSX.Element;
 
-declare function Badge(props: IBadge$1): react_jsx_runtime.JSX.Element;
+declare function Badge(props: IBadge): react_jsx_runtime.JSX.Element;
 
-declare function Logo(props: ILogo$1): react_jsx_runtime.JSX.Element;
+declare function Logo(props: ILogo): react_jsx_runtime.JSX.Element;
 
-declare function InputFile(props: IInputFile$1): react_jsx_runtime.JSX.Element;
+declare function InputFile(props: IInputFile): react_jsx_runtime.JSX.Element;
 
-declare function InputLabel(props: IInputLabel$1): react_jsx_runtime.JSX.Element;
+declare function InputLabel(props: IInputLabel): react_jsx_runtime.JSX.Element;
 
-declare function InputText(props: IInputText$1): react_jsx_runtime.JSX.Element;
+declare function InputText(props: IInputText): react_jsx_runtime.JSX.Element;
 
-declare function InputSelect(props: IInputSelect$1): react_jsx_runtime.JSX.Element;
+declare function InputSelect(props: IInputSelect): react_jsx_runtime.JSX.Element;
 
-declare function Button(props: IButton$1): react_jsx_runtime.JSX.Element;
+declare function Button(props: IButton): react_jsx_runtime.JSX.Element;
 
-declare function InputDateTime(props: IInputDateTime$1): react_jsx_runtime.JSX.Element;
+declare function InputDateTime(props: IInputDateTime): react_jsx_runtime.JSX.Element;
 
-declare function InputTextarea(props: IInputTextarea$1): react_jsx_runtime.JSX.Element;
+declare function InputTextarea(props: IInputTextarea): react_jsx_runtime.JSX.Element;
 
-declare function Form(props: IForm$1): react_jsx_runtime.JSX.Element;
+declare function Form(props: IForm): react_jsx_runtime.JSX.Element;
 
-declare function Chart(props: IChart$1): react_jsx_runtime.JSX.Element;
+declare function Chart(props: IChart): react_jsx_runtime.JSX.Element;
 
-declare function Avatar(props: IAvatar$1): react_jsx_runtime.JSX.Element;
+declare function Avatar(props: IAvatar): react_jsx_runtime.JSX.Element;
 
-declare function Lottie(props: ILottie$1): react_jsx_runtime.JSX.Element;
+declare function Lottie(props: ILottie): react_jsx_runtime.JSX.Element;
 
-declare function CreditCard(props: ICreditCard$1): react_jsx_runtime.JSX.Element;
+declare function CreditCard(props: ICreditCard): react_jsx_runtime.JSX.Element;
 
-declare function Block(props: IBlock$1): react_jsx_runtime.JSX.Element;
+declare function Block(props: IBlock): react_jsx_runtime.JSX.Element;
 
-declare function Component(props: IComponent$1): react_jsx_runtime.JSX.Element;
-
-declare const IconProviderContainer: ({ children }: IIconProvider$1) => react_jsx_runtime.JSX.Element;
-declare const useIcon: () => any;
-
-declare const ThemeProviderContainer: (props: IThemeProvider$1) => react_jsx_runtime.JSX.Element;
-declare const useTheme: () => IThemeContext$1;
-
-declare const TooltipProviderContainer: ({ children }: {
-    children: React.ReactNode;
-}) => react_jsx_runtime.JSX.Element;
-declare const useTooltip: () => any;
-
-declare const ModalProviderContainer: ({ children }: IModalProvider$1) => react_jsx_runtime.JSX.Element;
-declare const useModal: () => IModalContext$1;
+declare const Types_Avatar: typeof Avatar;
+declare const Types_Badge: typeof Badge;
+declare const Types_Block: typeof Block;
+declare const Types_Button: typeof Button;
+declare const Types_Chart: typeof Chart;
+declare const Types_CreditCard: typeof CreditCard;
+declare const Types_Form: typeof Form;
+declare const Types_InputDateTime: typeof InputDateTime;
+declare const Types_InputFile: typeof InputFile;
+declare const Types_InputLabel: typeof InputLabel;
+declare const Types_InputSelect: typeof InputSelect;
+declare const Types_InputText: typeof InputText;
+declare const Types_InputTextarea: typeof InputTextarea;
+declare const Types_LoadingApp: typeof LoadingApp;
+declare const Types_LoadingBar: typeof LoadingBar;
+declare const Types_Logo: typeof Logo;
+declare const Types_Lottie: typeof Lottie;
+declare const Types_Modal: typeof Modal;
+declare const Types_Paginate: typeof Paginate;
+declare const Types_Table: typeof Table;
+declare namespace Types {
+  export { Types_Avatar as Avatar, Types_Badge as Badge, Types_Block as Block, Types_Button as Button, Types_Chart as Chart, Types_CreditCard as CreditCard, Types_Form as Form, Types_InputDateTime as InputDateTime, Types_InputFile as InputFile, Types_InputLabel as InputLabel, Types_InputSelect as InputSelect, Types_InputText as InputText, Types_InputTextarea as InputTextarea, Types_LoadingApp as LoadingApp, Types_LoadingBar as LoadingBar, Types_Logo as Logo, Types_Lottie as Lottie, Types_Modal as Modal, Types_Paginate as Paginate, Types_Table as Table };
+}
 
 interface IPaginate {
     total: number;
@@ -136,7 +140,7 @@ interface IModal {
         title: string;
         icon: string;
     };
-    buttons?: Array<IButton$1>;
+    buttons?: Array<IButton>;
     children?: React.ReactNode;
     position?: "center" | "right" | "left";
     noCloseIcon?: boolean;
@@ -270,6 +274,299 @@ interface IAvatar {
     onClick?: Function;
 }
 
+declare const _default: {
+    loader: {
+        v: string;
+        meta: {
+            g: string;
+            a: string;
+            k: string;
+            d: string;
+            tc: string;
+        };
+        fr: number;
+        ip: number;
+        op: number;
+        w: number;
+        h: number;
+        nm: string;
+        ddd: number;
+        assets: never[];
+        layers: ({
+            ddd: number;
+            ind: number;
+            ty: number;
+            nm: string;
+            sr: number;
+            ks: {
+                o: {
+                    a: number;
+                    k: number;
+                    ix: number;
+                };
+                r: {
+                    a: number;
+                    k: number;
+                    ix: number;
+                    x: string;
+                };
+                p: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                    x: string;
+                };
+                a: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                };
+                s: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                };
+            };
+            ao: number;
+            shapes: {
+                ty: string;
+                it: ({
+                    ind: number;
+                    ty: string;
+                    ix: number;
+                    ks: {
+                        a: number;
+                        k: ({
+                            i: {
+                                x: number;
+                                y: number;
+                            };
+                            o: {
+                                x: number;
+                                y: number;
+                            };
+                            t: number;
+                            s: {
+                                i: number[][];
+                                o: number[][];
+                                v: number[][];
+                                c: boolean;
+                            }[];
+                        } | {
+                            t: number;
+                            s: {
+                                i: number[][];
+                                o: number[][];
+                                v: number[][];
+                                c: boolean;
+                            }[];
+                            i?: undefined;
+                            o?: undefined;
+                        })[];
+                        ix: number;
+                    };
+                    nm: string;
+                    mn: string;
+                    hd: boolean;
+                    c?: undefined;
+                    o?: undefined;
+                    w?: undefined;
+                    lc?: undefined;
+                    lj?: undefined;
+                    ml?: undefined;
+                    bm?: undefined;
+                    r?: undefined;
+                    p?: undefined;
+                    a?: undefined;
+                    s?: undefined;
+                    sk?: undefined;
+                    sa?: undefined;
+                } | {
+                    ty: string;
+                    c: {
+                        a: number;
+                        k: number[];
+                        ix: number;
+                    };
+                    o: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    w: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    lc: number;
+                    lj: number;
+                    ml: number;
+                    bm: number;
+                    nm: string;
+                    mn: string;
+                    hd: boolean;
+                    ind?: undefined;
+                    ix?: undefined;
+                    ks?: undefined;
+                    r?: undefined;
+                    p?: undefined;
+                    a?: undefined;
+                    s?: undefined;
+                    sk?: undefined;
+                    sa?: undefined;
+                } | {
+                    ty: string;
+                    c: {
+                        a: number;
+                        k: number[];
+                        ix: number;
+                    };
+                    o: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    r: number;
+                    bm: number;
+                    nm: string;
+                    mn: string;
+                    hd: boolean;
+                    ind?: undefined;
+                    ix?: undefined;
+                    ks?: undefined;
+                    w?: undefined;
+                    lc?: undefined;
+                    lj?: undefined;
+                    ml?: undefined;
+                    p?: undefined;
+                    a?: undefined;
+                    s?: undefined;
+                    sk?: undefined;
+                    sa?: undefined;
+                } | {
+                    ty: string;
+                    p: {
+                        a: number;
+                        k: number[];
+                        ix: number;
+                    };
+                    a: {
+                        a: number;
+                        k: number[];
+                        ix: number;
+                    };
+                    s: {
+                        a: number;
+                        k: number[];
+                        ix: number;
+                    };
+                    r: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    o: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    sk: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    sa: {
+                        a: number;
+                        k: number;
+                        ix: number;
+                    };
+                    nm: string;
+                    ind?: undefined;
+                    ix?: undefined;
+                    ks?: undefined;
+                    mn?: undefined;
+                    hd?: undefined;
+                    c?: undefined;
+                    w?: undefined;
+                    lc?: undefined;
+                    lj?: undefined;
+                    ml?: undefined;
+                    bm?: undefined;
+                })[];
+                nm: string;
+                np: number;
+                cix: number;
+                bm: number;
+                ix: number;
+                mn: string;
+                hd: boolean;
+            }[];
+            ip: number;
+            op: number;
+            st: number;
+            bm: number;
+        } | {
+            ddd: number;
+            ind: number;
+            ty: number;
+            nm: string;
+            sr: number;
+            ks: {
+                o: {
+                    a: number;
+                    k: number;
+                    ix: number;
+                };
+                r: {
+                    a: number;
+                    k: ({
+                        i: {
+                            x: number[];
+                            y: number[];
+                        };
+                        o: {
+                            x: number[];
+                            y: number[];
+                        };
+                        t: number;
+                        s: number[];
+                    } | {
+                        t: number;
+                        s: number[];
+                        i?: undefined;
+                        o?: undefined;
+                    })[];
+                    ix: number;
+                    x?: undefined;
+                };
+                p: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                    x?: undefined;
+                };
+                a: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                };
+                s: {
+                    a: number;
+                    k: number[];
+                    ix: number;
+                };
+            };
+            ao: number;
+            ip: number;
+            op: number;
+            st: number;
+            bm: number;
+            shapes?: undefined;
+        })[];
+        markers: never[];
+    };
+};
+
 interface IBase$1 {
     size?: number;
 }
@@ -277,7 +574,7 @@ type ILottie = (IBase$1 & {
     src: string;
     animation?: never;
 }) | (IBase$1 & {
-    animation: keyof typeof animations;
+    animation: keyof typeof _default;
     src?: never;
 });
 
@@ -303,7 +600,7 @@ interface IBase {
     label?: string;
 }
 type IBlock = (IBase & {
-    component: IComponentContent$1;
+    component: IComponentContent;
     content?: never;
     children?: never;
 }) | (IBase & {
@@ -377,7 +674,7 @@ interface ITooltipProvider extends IBaseProvider {
 interface IModalProvider extends IBaseProvider {
 }
 interface IModalConfig {
-    component: typeof Modal$1;
+    component: typeof Modal;
     name: string;
     props?: IModal;
     type?: "fixed" | "dinamic";
@@ -392,6 +689,22 @@ interface IModalContext {
 interface IBaseProvider {
     children: React.ReactNode;
 }
+
+declare function Component(props: IComponent): react_jsx_runtime.JSX.Element;
+
+declare const IconProviderContainer: ({ children }: IIconProvider) => react_jsx_runtime.JSX.Element;
+declare const useIcon: () => any;
+
+declare const ThemeProviderContainer: (props: IThemeProvider) => react_jsx_runtime.JSX.Element;
+declare const useTheme: () => IThemeContext;
+
+declare const TooltipProviderContainer: ({ children }: {
+    children: React.ReactNode;
+}) => react_jsx_runtime.JSX.Element;
+declare const useTooltip: () => any;
+
+declare const ModalProviderContainer: ({ children }: IModalProvider) => react_jsx_runtime.JSX.Element;
+declare const useModal: () => IModalContext;
 
 declare function StyledComponentsRegistry({ children }: {
     children: React.ReactNode;
