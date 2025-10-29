@@ -8,10 +8,10 @@
     "build": "tsup index.tsx --dts --format esm,cjs"
   },
   "dependencies": {
-    "@gustavo-valsechi/components": "file:components",
-    "@gustavo-valsechi/contexts": "file:contexts",
-    "@gustavo-valsechi/interfaces": "file:interfaces",
-    "@gustavo-valsechi/tools": "file:tools"
+    "@gustavo-valsechi/components": "file:./components",
+    "@gustavo-valsechi/contexts": "file:./contexts",
+    "@gustavo-valsechi/interfaces": "file:./interfaces",
+    "@gustavo-valsechi/tools": "file:./tools"
   },
   "devDependencies": {
     "tsup": "^8.5.0",
