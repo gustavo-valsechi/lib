@@ -1,0 +1,19 @@
+{
+  "name": "@gustavo-valsechi/lib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --dts"
+  },
+  "dependencies": {
+    "@gustavo-valsechi/components": "^1.0.3",
+    "@gustavo-valsechi/contexts": "^1.0.0",
+    "@gustavo-valsechi/interfaces": "^1.0.2",
+    "@gustavo-valsechi/tools": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.0.2",
+    "typescript": "^5.5.4"
+  }
+}
