@@ -1,6 +1,6 @@
 {
-  "name": "@gustavo-valsechi",
-  "version": "1.0.0",
+  "name": "@gustavo-valsechi/lib",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
