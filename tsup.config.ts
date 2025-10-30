@@ -12,6 +12,7 @@ export default defineConfig({
     dts: true,
     clean: false,
     splitting: false,
+    minify: true,
     esbuildOptions(opt) {
         opt.banner = { js: '"use client";' }
         opt.external = ["react", "react-dom", "styled-components", "next"]
