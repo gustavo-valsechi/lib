@@ -13,7 +13,11 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "paths": {
+      "@*": ["./*"],
+      "@gustavo-valsechi/*": ["./*"]
+    }
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist"]
